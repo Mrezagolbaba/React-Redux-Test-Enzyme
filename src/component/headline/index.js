@@ -1,3 +1,5 @@
+import PropTypes, { object } from "prop-types";
+
 const Headline = (props)=>{
     
     if(!props.header){
@@ -11,5 +13,14 @@ const Headline = (props)=>{
 
 
     )
+ }
+ Headline.prototype = {
+    header:PropTypes.string,
+    desc:PropTypes.string,
+    tempArr:PropTypes.arrayOf(PropTypes.shape({
+        firstName:PropTypes.string,
+        lastName:PropTypes.string,
+        age:PropTypes.number,
+    }))
  }
  export default Headline;
