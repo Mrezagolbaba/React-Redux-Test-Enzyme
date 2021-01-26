@@ -21,6 +21,7 @@ const Headline = (props)=>{
         firstName:PropTypes.string,
         lastName:PropTypes.string,
         age:PropTypes.number,
+        onlineStatus:PropTypes.bool
     }))
  }
  export default Headline;
