@@ -1,7 +1,7 @@
 import { shallow } from "enzyme";
-import { findByTestAtrr } from "../../../Utils";
+import { findByTestAtrr,checkProps } from "../../../Utils";
 import  Headline  from "./index";
-import checkPropTypes from "check-prop-types";
+
 
 const setUp = (props={})=>{
     const component = shallow(<Headline {...props} />); 
@@ -22,7 +22,7 @@ describe('Headline Component',()=>{
                     onlineStatus:false
                 }]
             }
-            const propsErr=checkPropTypes(Headline.prototype,expectedProps,'props',Headline.name)
+            const propsErr=checkProps(Headline,expectedProps)
             expect(propsErr).toBeUndefined
         })
     })
