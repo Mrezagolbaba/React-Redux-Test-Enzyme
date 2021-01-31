@@ -1,5 +1,5 @@
 import { shallow } from "enzyme";
-import { findByTestAtrr,checkProps } from "../../../Utils";
+import { findByTestAtrr,checkProps } from "../../../utils";
 import  Headline  from "./index";
 
 
