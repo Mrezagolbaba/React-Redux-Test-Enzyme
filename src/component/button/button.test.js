@@ -16,8 +16,8 @@ describe('SharedButton Component',()=> {
 
                }
             }
-            const propsErr = checkProps(SharedButton,expectedProps)
-            expect(propsErr).toBeUndefined();
+            const propsError = checkProps(SharedButton,expectedProps)
+            expect(propsError).toBeUndefined();
 
         })
     })
@@ -36,7 +36,7 @@ describe('SharedButton Component',()=> {
 
         it('Should Render a button ',()=> {
             const button = findByTestAtrr(wrapper,'buttonComponent');
-            expect(button.lenght).toBe(1)
+            expect(button.length).toBe(1)
         })
     })
 

@@ -19,7 +19,7 @@ function SharedButton(props){
     )
 }
 
-SharedButton.prototype = {
+SharedButton.propTypes = {
     buttonText: PropTypes.string,
     emitEvent: PropTypes.func
 };
